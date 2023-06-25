@@ -40,21 +40,6 @@ exports.protect = catchAsync(async (req, res, next) => {
       )
     );
   }
-  // 5) Check if user changed password after the token was issued
-  if (user.passwordChangedAt) {
-    const changedTimestamp = parseInt(
-      user.passwordChangedAt.getTime() / 1000,
-      10
-    );
-    if (decoded.iat < changedTimestamp) {
-      return next(
-        new AppError(
-          'User recently changed password! Please log in again.',
-          401
-        )
-      );
-    }
-  }
 
   req.sessionUser = user;
   next();

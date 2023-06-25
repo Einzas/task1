@@ -21,3 +21,5 @@
 [2023-06-18T20:37:39.585Z] info: You not are the owner of this account! || undefined undefined
 [2023-06-18T20:40:02.973Z] info: WHERE parameter "id" has invalid "undefined" value || undefined undefined
 [2023-06-18T20:40:32.153Z] info: You not are the owner of this account! || undefined undefined
+[2023-06-25T15:33:12.812Z] info: You are not logged in! Please log in to get access. || undefined undefined
+[2023-06-25T15:33:17.639Z] info: You do not have permission to perform this action || undefined undefined

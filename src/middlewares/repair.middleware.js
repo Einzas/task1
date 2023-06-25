@@ -8,7 +8,7 @@ exports.isRepairExist = catchAsync(async (req, res, next) => {
   const repair = await Repair.findOne({
     where: {
       id,
-      status: 'pending',
+      status: ['pending', 'completed'],
     },
     attributes: {
       exclude: ['userId'],
